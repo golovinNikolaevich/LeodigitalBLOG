@@ -4,6 +4,8 @@
 	border-box: boz-sizing;
 }
 
+html {font-size: 16px;}
+
 body {
 	margin: 0 auto;
 	list-style-type: none;
@@ -23,14 +25,26 @@ a:hover {
 	height: 100%;
 }
 
+// article:before,
+// article:after {
+// 	content: '';
+// 	display: table;
+// 	clear: both;
+// }
+
+// 1. Block-news general (first)
+// 2. Image news
+// 3. Social link
+
+
+
+// Block-news general
 .article-module {
 	position: relative;
   width: inherit;
   height: inherit;
-  min-height: 300px;
-  max-height: 500px;
-  overflow: hidden;
-  cursor: hover;
+  margin: 1rem 0 6rem;
+  padding: 25%;
 	&__bg-gradient {
 		position: absolute;
 		bottom: 0;
@@ -38,38 +52,115 @@ a:hover {
 		right: 0;
 		width: inherit;
 		height: inherit;
+		overflow: hidden;
 	}
-	&__link {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: -webkit-linear-gradient(transparent 0, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
-		background-repeat: no-repeat;
-		background-size: cover;
-		transition: 0.5s linear;
+	h3 {
+		font: 1.2rem/28px "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
+		text-transform: capitalize;
 	}
 }
 
 .article-module:hover .block-news__title a { color: #ee3440; }
 .article-module:hover .article-module__link { transform: scale(1.02); }
+.article-module:hover .block-news__published a { color: black; }
 
 .block-news {
 	position: absolute;
-	bottom: 0;
+	bottom: -5em;
 	left: 0;
 	right: 0;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.12);
+	&__details {
+		padding: 0 15px;
+	}
 	&__title {
 		text-align: center;
-	}
-	a {
-		color: white;
-		transition: 0.3s linear;
+		a {
+			color: black;
+			transition: 0.3s linear;
+		}
 	}
 	&__published {
 		display: flex;
 		justify-content: space-between;
-		color: white;
+		height: 1rem;
+		font: 0.8rem/12px "License", Arial, Roboto, sans-serif;
+		a {
+			color: #ee3440;
+			text-transform: uppercase;
+		}
+		p {
+			color: #C5C5C5;
+		}
+	}
+}
+
+// Image news
+.article-module__link {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	transition: 0.3s linear;
+}
+.block-news {
+	background: white;
+}
+
+.first {
+	margin: 0;
+	.article-module {
+		&__link {
+			background: -webkit-linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
+			background: -o-linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
+			background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
+		}
+	}
+	.block-news {
+		bottom: 0;
+		background: none;
+	}
+}
+.second .article-module__link { background: url('../img/car.jpg'); }
+.three .article-module__link { background: url('../img/girl.jpg'); }
+.video-block .article-module__link { background: url('../img/design.jpg'); }
+
+// Social link
+.format-follow-box { margin: 1rem; }
+.format-follow-actions {
+	background: #6000ff;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	text-align: center;
+	color: white;
+	h3 {
+		margin: 1.9rem 0;
+		font-size: 1.2rem;
+	}
+	.format-follow-buttons {
+		display: flex;
+		justify-content: space-around;
+		height: 3rem;
+    .format-follow-button {
+			flex: 1;
+	    border-right: 1px solid #FFF;
+    }
+    .format-follow-button:last-child {
+    	border: none;
+    }
+    .format-follow-button:hover path {
+    	fill: red;
+    }
+		svg {
+			width: 2rem;
+			height: 2rem;
+		}
+		path {
+			fill: white;
+		}
 	}
 }
