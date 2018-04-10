@@ -29,6 +29,7 @@ a:hover {
  1. Block-news general (first)
  2. News
  3. Social link
+ 4. Subscribe
  */
 
 
@@ -121,6 +122,12 @@ a:hover {
 			color: white;
 		}
 	}
+	.block-news {
+		&__play {
+			display: inline-block;
+			width: 5rem;
+		}
+	}
 }
 
 .first .article-module__link { background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.jpg'); }
@@ -128,6 +135,7 @@ a:hover {
 .three .article-module__link { background: url('../img/girl.jpg'); }
 .video-news .article-module__link { background: linear-gradient(transparent 0,transparent 70%,rgba(0, 2, 114, 0.7) 100%),url(../img/photo-girl-video-news.jpg); }
 .four .article-module__link { background: url('../img/design.jpg'); }
+.five .article-module__link { background: url('../img/beard.jpg'); }
 
 /* Social link */
 .format-follow-box { margin: 1rem; }
@@ -161,6 +169,54 @@ a:hover {
 		}
 		path {
 			fill: white;
+		}
+	}
+}
+
+/* Subscribe */
+
+.format-newsletter-subscribe {
+	background: RGB(255, 82, 69);
+	padding: 20px 15px 15px;
+	color: RGB(255, 255, 255);
+	text-align: center;
+}
+
+.newsletter {
+	.mobile-subscribe {
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid rgb(38, 38, 38);
+		background: RGB(255, 255, 255);
+		button {
+			width: 50px;
+			padding: 0 14px;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+	&-icon {
+		display: inline-block;
+		width: 20px;
+		margin-right: 15px;
+	}
+	.subscribe-field {
+		width: calc(100% - 50px);
+		padding: 11px 15px;
+		border-right: 1px solid rgb(38, 38, 38);
+		-moz-box-align: center;
+		box-align: center;
+		justify-content: flex-start;
+		display: flex;
+		.form-field {
+			width: calc(100% - 35px);
+			padding-top: 4px;
+			color: rgb(38, 38, 38);
+			font: 16px/16px "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
+			background: transparent;
+			border: none;
+			margin-top: -6px;
 		}
 	}
 }
