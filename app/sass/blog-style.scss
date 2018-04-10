@@ -25,16 +25,11 @@ a:hover {
 	height: 100%;
 }
 
-// article:before,
-// article:after {
-// 	content: '';
-// 	display: table;
-// 	clear: both;
-// }
-
-// 1. Block-news general (first)
-// 2. Image news
-// 3. Social link
+/*
+ 1. Block-news general (first)
+ 2. News
+ 3. Social link
+ */
 
 
 
@@ -95,7 +90,7 @@ a:hover {
 	}
 }
 
-// Image news
+/* News */
 .article-module__link {
 	position: absolute;
 	top: 0;
@@ -111,25 +106,30 @@ a:hover {
 	background: white;
 }
 
-.first {
+.first,
+.video-news {
+	min-height: 25rem;
+}
+
+.first,
+.video-news {
 	margin: 0;
-	.article-module {
-		&__link {
-			background: -webkit-linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
-			background: -o-linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
-			background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.webp');
-		}
-	}
 	.block-news {
 		bottom: 0;
 		background: none;
+		&__title a {
+			color: white;
+		}
 	}
 }
+
+.first .article-module__link { background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.jpg'); }
 .second .article-module__link { background: url('../img/car.jpg'); }
 .three .article-module__link { background: url('../img/girl.jpg'); }
-.video-block .article-module__link { background: url('../img/design.jpg'); }
+.video-news .article-module__link { background: linear-gradient(transparent 0,transparent 70%,rgba(0, 2, 114, 0.7) 100%),url(../img/photo-girl-video-news.jpg); }
+.four .article-module__link { background: url('../img/design.jpg'); }
 
-// Social link
+/* Social link */
 .format-follow-box { margin: 1rem; }
 .format-follow-actions {
 	background: #6000ff;
@@ -153,14 +153,14 @@ a:hover {
     	border: none;
     }
     .format-follow-button:hover path {
-    	fill: red;
+    	fill: rgba(255, 253, 253, 0.6);
     }
 		svg {
 			width: 2rem;
 			height: 2rem;
 		}
 		path {
-			fill: black;
+			fill: white;
 		}
 	}
 }
