@@ -20,6 +20,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.clear::before, .clear:after {
+    content: " ";
+    display: table;
+}
+
 .homepage {
 	width: 100%;
 	height: 100%;
@@ -30,6 +35,7 @@ a:hover {
  2. News
  3. Social link
  4. Subscribe
+ 5. Guide subscribers
  */
 
 
@@ -107,12 +113,12 @@ a:hover {
 	background: white;
 }
 
-.first,
+.first-block-news,
 .video-news {
 	min-height: 25rem;
 }
 
-.first,
+.first-block-news,
 .video-news {
 	margin: 0;
 	.block-news {
@@ -130,12 +136,20 @@ a:hover {
 	}
 }
 
-.first .article-module__link { background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.jpg'); }
-.second .article-module__link { background: url('../img/car.jpg'); }
-.three .article-module__link { background: url('../img/girl.jpg'); }
+.first-block-news .article-module__link { background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('../img/Format_Picks_April_City.jpg'); }
+.second-block-news .article-module__link { background: url('../img/car.jpg'); }
+.three-block-news .article-module__link { background: url('../img/girl.jpg'); }
 .video-news .article-module__link { background: linear-gradient(transparent 0,transparent 70%,rgba(0, 2, 114, 0.7) 100%),url(../img/photo-girl-video-news.jpg); }
-.four .article-module__link { background: url('../img/design.jpg'); }
-.five .article-module__link { background: url('../img/beard.jpg'); }
+.four-block-news .article-module__link { background: url('../img/design.jpg'); }
+.five-block-news .article-module__link { background: url('../img/beard.jpg'); }
+/* Second block news */
+.six-block-news .article-module__link { background: url('../img/book.jpg'); }
+.seven-block-news .article-module__link { background: url('../img/nude_girl.jpg'); }
+.eight-block-news .article-module__link { background: url('../img/avia.jpg'); }
+.nine-block-news .article-module__link { background: url('../img/mountain_house.jpg'); }
+.ten-block-news .article-module__link { background: url('../img/SMM_img.png'); }
+/*.eleven-block-news .article-module__link { background: url('../img/photo_cinema.jpg'); }*/
+.twelf-block-news .article-module__link { background: url('../img/space.jpg'); }
 
 /* Social link */
 .format-follow-box { margin: 1rem; }
@@ -218,5 +232,71 @@ a:hover {
 			border: none;
 			margin-top: -6px;
 		}
+	}
+}
+
+/* Guide subscribe */
+
+.subscribers {
+	margin: 20px 0;
+	text-align: center;
+	color: white;
+	a {
+		color: white;
+	}
+	.guide-subscribe {
+	  background-color: rgb(242, 183, 182);
+	  background-image: linear-gradient(rgb(242, 183, 182), rgb(244, 228, 224));
+		&-text {
+			margin-top: 25px;
+		}
+		.guides-icon-fill {
+			transform: scale(0.7);
+		}
+		.guides-icon-text {
+			position: relative;
+			top: -0.9rem;
+		}
+	}
+	.guide-title {
+		font-size: 19px;
+		font-family: "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
+	}
+	.guide-subscribe-image {
+		position: relative;
+		z-index: 1;
+		img {
+			padding: 20px;
+			width: 100%;
+		}
+	}
+	.guide-subscribe-form {
+		position: relative;
+		margin: -100px 0 0 0;
+		padding: 100px 15px 15px 15px;
+		background-color: rgb(255, 255, 255);
+	}
+	.guide-subscribe-email {
+		padding: 0 10px 0 45px;
+		outline: 0;
+		border: 1px solid rgb(171, 186, 197);
+		color: RGB(214, 214, 214);
+		background: url("../img/email.svg") no-repeat 20px center;
+		-webkit-appearance: none;
+		border-radius: 0;
+	}
+	.guide-subscribe-email,
+	.guide-subscribe-button {
+		display: inline-block;
+		height: 60px;
+		margin: 10px 0;
+		font-size: 20px;
+	}
+	.guide-subscribe-button {
+		background-color: RGB(238, 52, 64);
+		font-family: "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
+		border: none;
+		color: rgb(255, 255, 255);
+		outline: 0;
 	}
 }
