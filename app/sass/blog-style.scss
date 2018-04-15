@@ -41,7 +41,7 @@ a:hover {
  5. Guide subscribers
  6. Button show more
 
- //-- Responsive style --
+ //-- Responsive --
  1. Block news responsive
  */
 
@@ -301,6 +301,8 @@ a:hover {
 	&:hover { background: #262626; }
 }
 
+
+//-- Responsive --
 @media screen and (min-width: 768px){
 	.container-fluid { padding: 5px 15px; }
 
