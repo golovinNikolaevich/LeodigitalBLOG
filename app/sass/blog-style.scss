@@ -40,6 +40,9 @@ a:hover {
  4. Subscribe
  5. Guide subscribers
  6. Button show more
+
+ //-- Responsive style --
+ 1. Block news responsive
  */
 
 
@@ -81,7 +84,6 @@ a:hover {
 		font-weight: bold;
 		a {
 	    width: auto;
-	    margin: 0 40px 0 0;
 	    color: #EE3440;
 	    text-transform: uppercase;
 		}
@@ -124,13 +126,9 @@ a:hover {
 }
 .block-news { background: white; }
 
-.first-block-news,
-.video-news {
-	min-height: 20rem;
-}
+.first-block-news { min-height: 20rem; }
 
-.first-block-news,
-.video-news {
+.first-block-news {
 	.block-news__published {
 		a, p {
 			color: white !important;
@@ -141,13 +139,14 @@ a:hover {
     padding: 0 1rem;
 		bottom: 0;
 		background: none;
-		&__title a { color: white; }
-	}
-	.block-news {
-		&__play {
-			display: inline-block;
-			width: 5rem;
+		&__categories {
+		 text-align: start;
+		 a { margin: 0 40px 0 0; }
 		}
+		&__published {
+			a, p { color: white !important; }
+		}
+		&__title a { color: white; }
 	}
 }
 
@@ -280,46 +279,42 @@ a:hover {
 	.guide-subscribe-email,
 	.guide-subscribe-button {
 		display: inline-block;
-		height: 60px;
+		height: 58px;
 		margin: 10px 0;
 		font-size: 20px;
-	}
-	.guide-subscribe-button {
-		background-color: RGB(238, 52, 64);
-		font-family: "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
-		border: none;
-		color: rgb(255, 255, 255);
-		outline: 0;
 	}
 }
 
 /* Button show more */
-.homepage .btn-show-more {
+.homepage .btn-show-more,
+.guide-subscribe-button {
 	padding: 20px 40px;
-	background: RGB(238, 52, 64);
+	background-color: RGB(238, 52, 64);
 	border: 0;
 	border-radius: 0;
 	font: 20px/20px "PxGroteskRegular", Calibri, Arial, Roboto, sans-serif;
 	margin: 0 0 30px 0;
 	transition: background .3s linear;
+	color: rgb(255, 255, 255);
+	outline: 0;
+	cursor: pointer;
 	&:hover { background: #262626; }
 }
 
 @media screen and (min-width: 768px){
-	.container-fluid { padding: 0 15px; }
-	
-	.block-news__categories { display: block; }
-	.block-news__published {
-		justify-content: center;
-		a { display: none; }
-	}
+	.container-fluid { padding: 5px 15px; }
 
 	.article-module {
 		width: 50%;
 		padding: 18%;
 		line-height: 2rem;
 	}
-
+	//-- Block news responsive
+	.block-news__categories { display: block; }
+	.block-news__published {
+		justify-content: center;
+		a { display: none; }
+	}
 	// First block news
 	.first-block-news {
 		width: 100%;
@@ -344,24 +339,22 @@ a:hover {
 	}
 
 	.block-news {
-		bottom: -4em;
+		bottom: -6.1em;
     margin: 0 30px;
     padding: 0.5rem 1.4rem;
     box-shadow: initial;
+    background: #F8F9F9;
     &__categories {
     	margin: 0;
     	text-align: center;
     }
 	}
 
+	.four-block-news { width: calc(65%); }
+
 	// Social block
 	.visible-xs {
 		display: none;
-	}
-
-	.video-news {
-    width: calc(65%);
-    margin: 0 auto 20px;
 	}
 
 }
