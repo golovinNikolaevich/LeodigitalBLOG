@@ -81,7 +81,7 @@
 	    		</div>
 				</article>
 				<!-- Social link's -->
-				<div class="format-follow-box visible-xs">
+				<div class="format-follow-box hidden-xs">
 					<div class="format-follow-actions">
 						<h3>Follow Us</h3>
 						<div class="format-follow-buttons">
@@ -191,24 +191,62 @@
 	    				<div class="block-news__published">
 	    					<a href="#link-news" class="block-news__published-link">Photography</a>
 	    					<p data-pubdate="2018-04-06">13.02.2018</p>
-	    					<img src="img/components/art_img.svg" alt="art">
+	    					<img src="img/components/art_img.svg" class="visible-xs hidden-xs" alt="art">
 	    				</div>
 	    			</div>
 	    		</div>
 				</article>
 				<!-- Homepage footer -->
-				<div class="homepage-featured-articles-footer">
+				<div class="homepage-featured-articles-footer flex">
 				<!-- Most popular block -->
-					<div class="homepage-popular-articles hidden-xs">
+					<div class="homepage-popular-articles visible-xs hidden-xs">
 						<h3>Most Popular This Week</h3>
 						<ul>
 							<li>
 								<a href="#">
-									<div class="homepage-popular-articles-image" style="background: url('img/popular-news/');"></div>
+									<div class="homepage-popular-articles-image" style="background-image: url('img/girl.jpg');"></div>
 									<div class="homepage-popular-articles-copy">
 										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
-										<p class="block-news__published-link">Design</p>
-										<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										<div class="homepage-popular-articles-body">
+											<span class="block-news__published-link">Design</span>
+											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="homepage-popular-articles-image" style="background-image: url('img/book.jpg');"></div>
+									<div class="homepage-popular-articles-copy">
+										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
+										<div class="homepage-popular-articles-body">
+											<span class="block-news__published-link">Design</span>
+											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="homepage-popular-articles-image" style="background-image: url('img/beard.jpg');"></div>
+									<div class="homepage-popular-articles-copy">
+										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
+										<div class="homepage-popular-articles-body">
+											<span class="block-news__published-link">photography</span>
+											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="homepage-popular-articles-image" style="background-image: url('img/nude_girl.jpg');"></div>
+									<div class="homepage-popular-articles-copy">
+										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
+										<div class="homepage-popular-articles-body">
+											<span class="block-news__published-link">Design</span>
+											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										</div>
 									</div>
 								</a>
 							</li>
@@ -249,10 +287,10 @@
 										</svg>
 									</button>
 								</form>
-					<!-- 					<div class="success hidden">
-										<p>Thanks, you’re subscribed! Watch your inbox for the latest articles and features.</p>
-										</div>
-										<div class="error error-copy hidden">Oops—you’ve entered an invalid email.</div> -->
+								<div class="success hidden-xs">
+								<p>Thanks, you’re subscribed! Watch your inbox for the latest articles and features.</p>
+								</div>
+								<div class="error error-copy hidden">Oops—you’ve entered an invalid email.</div>
 							</div>
 						</div>
 					</div>
@@ -266,6 +304,11 @@
 			<div class="subscribers">
 				<div class="col-xs-12">
 					<div class="guide-subscribe clear">
+						<div class="guide-subscribe-image col-xs-12 hidden-xs visible-xs">
+							<a href="#">
+							<img src="img/blog_img-min.png">
+							</a>
+						</div>
 						<div class="guide-subscribe-text col-xs-12">
 							<svg width="28px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="guides-icon-svg svg replaced-svg">
 							    <g class="guides-icon-fill" fill="#ffffff">
@@ -278,15 +321,15 @@
 							<p class="guide-title">More Traffic, More Money, More Fame: How to market your online portfolio</p>
 							</a>
 						</div>
-						<div class="guide-subscribe-image col-xs-12">
+						<div class="guide-subscribe-image col-xs-12 hidden-sm">
 							<a href="#">
 							<img src="img/blog_img-min.png">
 							</a>
 						</div>
 						<div class="guide-subscribe-form col-xs-12">
-							<input class="guide-subscribe-email col-xs-12 col-sm-4" name="email" placeholder="Enter email" type="email">
+							<input class="guide-subscribe-email col" name="email" placeholder="Enter email" type="email">
 							<span class="guide-subscribe-email-error error-text visible-xs" style="opacity: 0;"></span>
-							<button class="guide-subscribe-button col-xs-12 col-sm-4" data-location="landing_homepage">
+							<button class="guide-subscribe-button col" data-location="landing_homepage">
 							Get the Guide
 							</button>
 						</div>
@@ -390,6 +433,9 @@
 						<a  href="#" class="article-module__link" style=" background-image: url('img/SMM_img.png');"></a>
 					</div>
 	    		<div class="block-news">
+	    			<div class="block-news__circle-img">
+	    				<img src="img/components/art_img.svg" class="visible-xs hidden-xs" alt="art">
+	    			</div>
 		    		<div class="block-news__categories">
 	    				<a href="#link-news" class="block-news__published-link">Design</a>
 	    			</div>

@@ -116,7 +116,6 @@ a:hover {
 		font: 0.8rem/12px "License", Arial, Roboto, sans-serif;
 		a {
 			color: #ee3440;
-			text-transform: uppercase;
 		}
 		p { color: #C5C5C5; }
 	}
@@ -266,18 +265,57 @@ a:hover {
 
 //-- Footer articles
 .homepage-featured-articles-footer {
-	width: 100%;
 	margin: 5px 0;
 }
 /* Most popular news */
 .homepage-popular-articles {
+	margin-right: 0.8rem;
+	> h3 {
+		text-transform: uppercase;
+	}
+	ul {
+		list-style: none;
+		border: 1px solid rgb(235, 235, 235);
+		border-bottom: none;
+	}
 	a {
 		display: flex;
+		padding: 15px 10px;
+		color: black;
 	}
 	&-image {
-		width: 100px;
-		height: 90px;
-		background: black !important;
+		width: 95px;
+		margin-right: 0.9rem;
+		background-position: center top;
+		background-size: cover;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	.block-news__published-link {
+		margin-right: 0.8rem;
+		color: rgb(238, 52, 64);
+		text-transform: uppercase;
+		font-size: 0.8rem;
+	}
+	.timestamp {
+		font-size: 0.7rem;
+		color: rgb(200, 200, 200);
+	}
+}
+
+/* Most popular hover */
+.homepage-popular-articles {
+	li {
+		border-bottom: 1px solid rgb(235, 235, 235);
+		background: rgb(248, 249, 249);
+	}
+	li:hover {
+		background: rgb(238, 52, 64);
+	}
+	li:hover .homepage-popular-articles-copy h3,
+	li:hover .homepage-popular-articles-body span { 
+		color: white;
 	}
 }
 
@@ -412,8 +450,57 @@ a:hover {
 		}
 	}
 
+	.ten-block-news {
+		width: 50%;
+		.block-news {
+			&__circle-img {
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				background: white;
+				left: 41%;
+				top: -32px;
+				border-radius: 50%;
+			}
+		}
+	}
+
 	// Social block
-	.visible-xs {	display: none; }
-	.hidden-xs { display: block; }
+	.visible-xs {	display: block; }
+	.hidden-sm { display: none; }
+
+	/* Guide subcribes responsive */
+	.subscribers {
+		padding: 30px;
+		background-color: RGB(248, 249, 249);
+		.guide-subscribe {
+			&-image {
+				width: 33%;
+				float: left;
+			}
+			&-text { text-align: left; }
+			&-form {
+		    display: flex;
+    		width: 100%;
+    		justify-content: space-around;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	/* Social links responsive */
+	.homepage-featured-articles-footer {
+		width: 100%;
+	}
+
+	.format-follow-box { width: 45%; }
+	.format-follow-actions { height: 100%; }
+	.format-follow-actions .format-follow-buttons {
+		display: flex;
+		justify-content: space-around;
+		height: 15rem;
+		flex-direction: column;
+	}
 
 }
