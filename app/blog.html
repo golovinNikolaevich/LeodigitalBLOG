@@ -81,7 +81,7 @@
 	    		</div>
 				</article>
 				<!-- Social link's -->
-				<div class="format-follow-box hidden-xs">
+				<div class="format-follow-box hidden-sm">
 					<div class="format-follow-actions">
 						<h3>Follow Us</h3>
 						<div class="format-follow-buttons">
@@ -171,11 +171,11 @@
 	    		</div>
 				</article>
 				<!-- Five block news -->
-				<article class="article-module five-block-news">
+				<article class="article-module sm-block-news md-left">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style=" background-image: url('img/beard.jpg');"></a>
 					</div>
-	    		<div class="block-news">
+					<div class="block-news">
 		    		<div class="block-news__categories">
 	    				<a href="#link-news" class="block-news__published-link">Photography</a>
 	    			</div>
@@ -191,7 +191,7 @@
 	    				<div class="block-news__published">
 	    					<a href="#link-news" class="block-news__published-link">Photography</a>
 	    					<p data-pubdate="2018-04-06">13.02.2018</p>
-	    					<img src="img/components/art_img.svg" class="visible-xs hidden-xs" alt="art">
+	    					<img src="img/components/art_img.svg" class="visible-sm hidden-xs" alt="art">
 	    				</div>
 	    			</div>
 	    		</div>
@@ -199,12 +199,24 @@
 				<!-- Homepage footer -->
 				<div class="homepage-featured-articles-footer flex">
 				<!-- Most popular block -->
-					<div class="homepage-popular-articles visible-xs hidden-xs">
+					<div class="homepage-popular-articles visible-sm hidden-xs">
 						<h3>Most Popular This Week</h3>
 						<ul>
 							<li>
 								<a href="#">
-									<div class="homepage-popular-articles-image" style="background-image: url('img/girl.jpg');"></div>
+									<div class="homepage-popular-articles-image hidden-md" style="background-image: url('img/girl.jpg');"></div>
+									<div class="homepage-popular-articles-copy">
+										<h3>Get to Know the Portrait Photography of Omar Khaleel</h3>
+										<div class="homepage-popular-articles-body">
+											<span class="block-news__published-link">Art</span>
+											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="homepage-popular-articles-image hidden-md" style="background-image: url('img/book.jpg');"></div>
 									<div class="homepage-popular-articles-copy">
 										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
 										<div class="homepage-popular-articles-body">
@@ -216,11 +228,11 @@
 							</li>
 							<li>
 								<a href="#">
-									<div class="homepage-popular-articles-image" style="background-image: url('img/book.jpg');"></div>
+									<div class="homepage-popular-articles-image hidden-md" style="background-image: url('img/beard.jpg');"></div>
 									<div class="homepage-popular-articles-copy">
 										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
 										<div class="homepage-popular-articles-body">
-											<span class="block-news__published-link">Design</span>
+											<span class="block-news__published-link">Photography</span>
 											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
 										</div>
 									</div>
@@ -228,23 +240,11 @@
 							</li>
 							<li>
 								<a href="#">
-									<div class="homepage-popular-articles-image" style="background-image: url('img/beard.jpg');"></div>
+									<div class="homepage-popular-articles-image hidden-md" style="background-image: url('img/nude_girl.jpg');"></div>
 									<div class="homepage-popular-articles-copy">
 										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
 										<div class="homepage-popular-articles-body">
-											<span class="block-news__published-link">photography</span>
-											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="homepage-popular-articles-image" style="background-image: url('img/nude_girl.jpg');"></div>
-									<div class="homepage-popular-articles-copy">
-										<h3>Refinery29 Creative Director Piera Gelardi is Keeping It Messy</h3>
-										<div class="homepage-popular-articles-body">
-											<span class="block-news__published-link">Design</span>
+											<span class="block-news__published-link">News</span>
 											<span class="timestamp" data-pubdate="2018-04-03" data-time-formatted="true">03.04.2018</span>
 										</div>
 									</div>
@@ -287,10 +287,10 @@
 										</svg>
 									</button>
 								</form>
-								<div class="success hidden-xs">
+<!-- 								<div class="success hidden-xs">
 								<p>Thanks, you’re subscribed! Watch your inbox for the latest articles and features.</p>
 								</div>
-								<div class="error error-copy hidden">Oops—you’ve entered an invalid email.</div>
+								<div class="error error-copy hidden">Oops—you’ve entered an invalid email.</div> -->
 							</div>
 						</div>
 					</div>
@@ -304,7 +304,7 @@
 			<div class="subscribers">
 				<div class="col-xs-12">
 					<div class="guide-subscribe clear">
-						<div class="guide-subscribe-image col-xs-12 hidden-xs visible-xs">
+						<div class="guide-subscribe-image col-xs-12 hidden-xs visible-sm">
 							<a href="#">
 							<img src="img/blog_img-min.png">
 							</a>
@@ -328,7 +328,7 @@
 						</div>
 						<div class="guide-subscribe-form col-xs-12">
 							<input class="guide-subscribe-email col" name="email" placeholder="Enter email" type="email">
-							<span class="guide-subscribe-email-error error-text visible-xs" style="opacity: 0;"></span>
+							<span class="guide-subscribe-email-error error-text visible-sm" style="opacity: 0;"></span>
 							<button class="guide-subscribe-button col" data-location="landing_homepage">
 							Get the Guide
 							</button>
@@ -340,7 +340,7 @@
     <div class="container-fluid flex">
     	<div class="homepage">
     		<!-- Six block news -->
-				<article class="article-module six-block-news">
+				<article class="article-module six-block-news md-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style=" background-image: url('img/book.jpg');"></a>
 					</div>
@@ -362,7 +362,7 @@
 	    		</div>
 				</article>
 				<!-- Seven block news -->
-				<article class="article-module seven-block-news">
+				<article class="article-module seven-block-news md-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style=" background-image: url('img/nude_girl.jpg');"></a>
 					</div>
@@ -384,7 +384,7 @@
 	    		</div>
 				</article>
 				<!-- Eight block news -->
-				<article class="article-module eight-block-news">
+				<article class="article-module eight-block-news md-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style=" background-image: url('img/avia.jpg');"></a>
 					</div>
@@ -406,7 +406,7 @@
 	    		</div>
 				</article>
 				<!-- Nine block news -->
-				<article class="article-module nine-block-news">
+				<article class="article-module nine-block-news md-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style=" background-image: url('img/mountain_house.jpg');"></a>
 					</div>
@@ -433,11 +433,11 @@
 						<a  href="#" class="article-module__link" style=" background-image: url('img/SMM_img.png');"></a>
 					</div>
 	    		<div class="block-news">
-	    			<div class="block-news__circle-img">
-	    				<img src="img/components/art_img.svg" class="visible-xs hidden-xs" alt="art">
-	    			</div>
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/art_img.svg" class="categories-img" alt="art">
+		    			</a>
+	    				<a href="#link-news" class="block-news__published-link">Art</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
@@ -521,35 +521,42 @@
 					</div>
 				</div>
 	    	<!-- Eleven block news -->
-				<article class="article-module eleven-block-news">
+				<article class="article-module sm-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="img/photo_cinema.jpg" style="background-image: url('img/photo_cinema.jpg');" class="article-module__link"></a>
 					</div>
-	    		<div class="block-news">
+					<div class="block-news">
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+	    				<a href="#link-news" class="block-news__published-link">Photography</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
 		    				<h3>
-		    					<a href="#">Cristina Tufiño Makes Neon Artifacts for the Future </a>
+		    					<a href="#">The Ultimate Guide To Building A Photography Website</a>
 		    				</h3>
+	    				<div class="block-news__body">
+	    					<p>We asked artists to send us their best self portraits, and these are the results.</p>
+	    				</div>
 	    				</div>
 	    				<div class="block-news__published">
-	    					<a href="#link-news" class="block-news__published-link">Design</a>
-	    					<p data-pubdate="2018-04-06">16.01.2018</p>	
+	    					<a href="#link-news" class="block-news__published-link">Photography</a>
+	    					<p data-pubdate="2018-04-06">13.02.2018</p>
+	    					<img src="img/components/art_img.svg" class="visible-sm hidden-xs" alt="art">
 	    				</div>
 	    			</div>
 	    		</div>
 				</article>
 	    	<!-- Twelf block news -->
-				<article class="article-module twelf-block-news">
+				<article class="article-module wide-block-news margin-right-module">
 					<div class="article-module__bg-gradient">
 						<a  href="#" class="article-module__link" style="background-image: url('img/space.jpg');"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/art_img.svg" class="categories-img" alt="art">
+		    			</a>
+	    				<a href="#link-news" class="block-news__published-link">Art</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
@@ -565,13 +572,16 @@
 	    		</div>
 				</article>
 				<!-- Thertin block news -->
-				<article class="article-module">
+				<article class="article-module wide-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="img/simpsons.jpg" style="background-image: url('img/simpsons.jpg');" class="article-module__link"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/photo_img.svg" class="categories-img" alt="art">
+		    			</a>
+	    				<a href="#link-news" class="block-news__published-link">Photography</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
@@ -587,12 +597,15 @@
 	    		</div>
 				</article>
 				<!-- Fourtin block news -->
-				<article class="article-module">
+				<article class="article-module wide-block-news margin-right-module">
 					<div class="article-module__bg-gradient">
 						<a  href="img/shwarz.jpg" style="background-image: url('img/shwarz.jpg');" class="article-module__link"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/design_img.svg" class="categories-img" alt="art">
+		    			</a>
 	    				<a href="#link-news" class="block-news__published-link">Design</a>
 	    			</div>
 	    			<div class="block-news__details">
@@ -609,13 +622,16 @@
 	    		</div>
 				</article>
 				<!-- Fiftin block news -->
-				<article class="article-module">
+				<article class="article-module wide-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="img/berlin.jpg" style="background-image: url('img/berlin.jpg');" class="article-module__link"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/art_img.svg" class="categories-img" alt="art">
+		    			</a>
+	    				<a href="#link-news" class="block-news__published-link">Art</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
@@ -631,12 +647,15 @@
 	    		</div>
 				</article>
 				<!-- Sixtin block news -->
-				<article class="article-module">
+				<article class="article-module wide-block-news margin-right-module">
 					<div class="article-module__bg-gradient">
 						<a  href="img/imac.jpeg" style="background-image: url('img/imac.jpeg');" class="article-module__link"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/design_img.svg" class="categories-img" alt="art">
+		    			</a>
 	    				<a href="#link-news" class="block-news__published-link">Design</a>
 	    			</div>
 	    			<div class="block-news__details">
@@ -653,13 +672,16 @@
 	    		</div>
 				</article>
 				<!-- Seventin block news -->
-				<article class="article-module">
+				<article class="article-module wide-block-news">
 					<div class="article-module__bg-gradient">
 						<a  href="img/fest.jpg" style="background-image: url('img/fest.jpg');" class="article-module__link"></a>
 					</div>
 	    		<div class="block-news">
 		    		<div class="block-news__categories">
-	    				<a href="#link-news" class="block-news__published-link">Design</a>
+		    			<a href="#" class="block-news__circle-img hidden-xs">
+		    				<img src="img/components/photo_img.svg" class="categories-img" alt="art">
+		    			</a>
+	    				<a href="#link-news" class="block-news__published-link">Photography</a>
 	    			</div>
 	    			<div class="block-news__details">
 	    				<div class="block-news__title">
@@ -668,19 +690,19 @@
 		    				</h3>
 	    				</div>
 	    				<div class="block-news__published">
-	    					<a href="#link-news" class="block-news__published-link">Design</a>
+	    					<a href="#link-news" class="block-news__published-link">Photography</a>
 	    					<p data-pubdate="2018-04-06">16.01.2018</p>	
 	    				</div>
 	    			</div>
 	    		</div>
 				</article>
+		  	<div class="more-button homepage">
+					<div class="col-xs-12 text-center">
+						<a class="btn btn-primary btn-lg btn-show-more js-btn-show-more" data-remote="true" href="/magazine/articles/homepage/11">Show more</a>
+					</div>
+				</div>
     	</div>
     </div>
-  	<div class="homepage">
-			<div class="col-xs-12 text-center">
-				<a class="btn btn-primary btn-lg btn-show-more js-btn-show-more" data-remote="true" href="/magazine/articles/homepage/11">Show more</a>
-			</div>
-		</div>
     <!-- 
     	2. Сделать адаптивный сайт
     	3. Добавить категории в блоки

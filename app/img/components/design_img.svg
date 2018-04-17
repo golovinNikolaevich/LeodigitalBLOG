@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-Section" transform="translate(-800.000000, -484.000000)" fill="#D6D6D6">
+            <g id="Profession-Filter" transform="translate(505.000000, 484.000000)">
+                <g id="Group-4" transform="translate(295.000000, 0.000000)">
+                    <g id="Designers-Icon">
+                        <path d="M0,45 L28.125,45 L28.125,16.875 L0,16.875 L0,45 Z M3.57142857,41.4285714 L24.5535714,41.4285714 L24.5535714,20.4464286 L3.57142857,20.4464286 L3.57142857,41.4285714 Z" id="Fill-1"/>
+                        <path d="M28.125,0 C18.8053571,0 11.25,7.55535714 11.25,16.875 C11.25,26.1946429 18.8053571,33.75 28.125,33.75 C37.4446429,33.75 45,26.1946429 45,16.875 C45,7.55535714 37.4446429,0 28.125,0 M28.125,3.57142857 C35.4607143,3.57142857 41.4285714,9.53928571 41.4285714,16.875 C41.4285714,24.2107143 35.4607143,30.1785714 28.125,30.1785714 C20.7892857,30.1785714 14.8214286,24.2107143 14.8214286,16.875 C14.8214286,9.53928571 20.7892857,3.57142857 28.125,3.57142857" id="Fill-2"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
