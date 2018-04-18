@@ -82,7 +82,7 @@ a:hover {
 	box-shadow: 0 2px 3px rgba(0,0,0,0.12);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	&__categories {
 		display: none;
 		font-size: 0.8rem;
@@ -535,6 +535,23 @@ a:hover {
 		}
 	}
 
+	.newsletter {
+		.mobile-subscribe {
+			background: transparent;
+    	border: none;
+    	border-bottom: 1px solid white;;
+		}
+		.fill-target {
+			fill: white;
+		}
+		.subscribe-field {
+			border: none;
+		}
+		input::placeholder {
+			color: white;
+		}
+	}
+
 	/* Social links responsive */
 	.homepage-featured-articles-footer {
 		width: 100%;
@@ -609,10 +626,11 @@ a:hover {
 	    min-height: 11rem;
     	max-height: 11rem;
 	    bottom: -9.4rem;
-			transition: bottom .3s linear;
+			transition: min-height .3s linear, padding-bottom .3s linear;
 		}
 		&:hover .block-news {
-			bottom: -8.5rem;
+	    padding-bottom: 2rem;
+	    min-height: 12rem;
 		}
 	}
 
@@ -689,9 +707,27 @@ a:hover {
 	.second-block-news {
 		.block-news {
 			bottom: -7.4rem;
-	    min-height: 8rem;
 	    left: -7rem;
+	    min-height: 8rem;
 	    margin: 0 4rem;
+	    padding: 1rem;
+		}
+	}
+
+	.three-block-news {
+		.block-news {
+			margin: 0 6rem;
+		  bottom: -5rem;
+		  min-height: 10rem;
+		}
+	}
+
+	.article-module {
+		&:hover .block-news {
+			transition: .3s linear;
+			-moz-transition: .3s linear;
+			-webkit-transition: .3s linear;
+	    box-shadow: 0 6px 30px -12px rgba(140,140,140,.8)
 		}
 	}
 
