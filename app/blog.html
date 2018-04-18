@@ -11,12 +11,14 @@
     <title>Leodigital Blog</title>
   </head>
   <body>
+  	<!-- Hide/Visible block -->
+  	<div class="rainbow-roller"></div>
     <div class="container-fluid flex">
 			<div class="homepage clear">
 			<!-- First block news -->
 				<article class="article-module first-block-news">
 					<div class="article-module__bg-gradient">
-						<a  href="#" class="article-module__link" style="background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('img/Format_Picks_April_City.jpg');"></a>
+						<a  href="#" class="article-module__link" style="background: linear-gradient(transparent 0%, transparent 70%, rgba(0,0,0,0.7) 100%), url('img/italia.jpg');"></a>
 					</div>
 	    		<div class="block-news">
 	    			<div class="block-news__categories">
@@ -297,10 +299,8 @@
 				</div>
 			</div>
     </div>
-		<!-- Subscribe -->
     <div class="container-fluid">
-    </div>
-    <div class="container-fluid">
+			<!-- Subscribe -->
 			<div class="subscribers">
 				<div class="col-xs-12">
 					<div class="guide-subscribe clear">
@@ -705,15 +705,25 @@
 				</div>
     	</div>
     </div>
-    <!-- 
-    	2. Сделать адаптивный сайт
-    	3. Добавить категории в блоки
-
-     -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    	// Hide/visible rainbow-roller //
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+		    	/*Если сделали скролл на 30px задаём новый класс для header*/
+				if ( height > 30 ){
+					$('.rainbow-roller').addClass('hideUp');
+				} 
+					/*Если меньше 30px удаляем класс для header*/
+				else {
+					$('.rainbow-roller').removeClass('hideUp');
+				}
+			});
+		</script>
+    </script>
   </body>
 </html>
