@@ -594,6 +594,12 @@ a:hover {
 		justify-content: center;
 	}
 
+	.container-more {
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+	}
+
 }
 
 @media screen and (min-width: 992px){
@@ -738,8 +744,9 @@ a:hover {
 		padding: 11%;
 	}
 
-	.margin-right-module {
-		margin: 2rem 0 6rem;
+	.margin-right-module,
+	.three-column {
+		margin: 2rem 0 9rem;
 	}
 
 }
