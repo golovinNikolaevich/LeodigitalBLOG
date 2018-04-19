@@ -514,6 +514,8 @@ a:hover {
 			min-height: 11rem;
 			margin: 0;
 			bottom: -10rem;
+			max-height: 11rem;
+			word-wrap: break-word;
 			&__circle-img {
 		    position: absolute;
 		    width: 60px;
