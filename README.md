@@ -1,1 +1,1 @@
-# My work for web https://leodigital.com.ua/ru/blog
+# My work for web leodigital.com.ua/ru/blog
