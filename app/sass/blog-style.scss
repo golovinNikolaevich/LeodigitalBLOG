@@ -32,7 +32,11 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1200px;
+	margin: 0 auto;
 }
+
+.contain { background: white; max-width: 100%;}
 
 /*
 	Made A.G
@@ -387,6 +391,18 @@ a:hover {
 	}
 }
 
+.container-more {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+/* More button */
+.homepage .more-button {
+	margin: 2rem auto;
+}
 
 
 //-- Responsive --
@@ -404,7 +420,7 @@ a:hover {
 	.visible-sm {	display: block; }
 	.hidden-sm { display: none; }
 
-	.container-fluid { padding: 0 0.9rem; max-width: 1200px; }
+	.contain { padding: 0 0.9rem; width: 100%; }
 	.homepage { justify-content: space-evenly; }
 
 	.article-module {
@@ -581,22 +597,11 @@ a:hover {
 		flex-direction: column;
 	}
 
-	.container-fluid:nth-child(4) {
+	.contain:nth-child(4) {
 		background-color: RGB(248, 249, 249);
 		.block-news {
 			background: white;
 		}
-	}
-
-	/* More button */
-	.more-button {
-		margin: 2rem auto;
-	}
-
-	.container-more {
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: space-between;
 	}
 
 }
