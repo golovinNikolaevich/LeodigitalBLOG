@@ -764,6 +764,8 @@ a:hover {
 
 @media screen and (min-width: 1200px){
 
+	.hidden-md { display: block }
+
 	.article-module__link {
 	  -webkit-filter: opacity(.8);
 	  filter: opacity(.8);
