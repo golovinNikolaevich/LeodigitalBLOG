@@ -433,6 +433,10 @@ a:hover {
 	.block-news__categories { display: block; }
 	.block-news__published {
 		justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 		a { display: none; }
 	}
 	// First block news
@@ -500,6 +504,7 @@ a:hover {
 				flex-direction: row-reverse;
 			}
 			&__published {
+				position: unset;
 				flex-direction: column;
 				margin-top: 2rem;
 		  }
